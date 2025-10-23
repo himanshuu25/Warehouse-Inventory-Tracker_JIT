@@ -92,6 +92,7 @@ public class WarehouseOwner {
 			}
 			case 5: {
 				System.out.println("successfully exited");
+				o.stopObserver();
 				System.exit(0);
 			}
 

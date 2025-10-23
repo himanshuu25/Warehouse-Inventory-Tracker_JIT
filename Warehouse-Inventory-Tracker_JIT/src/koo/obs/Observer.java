@@ -36,4 +36,7 @@ public class Observer implements StockAlert,Runnable {
     		  System.out.println("ALERT -> "+p.getProName()+"'s stock is low only "+p.getProQnty()+" are remaining");
     	  }
       }
+      public void stopObserver() {
+    	  run=false;
+      }
 }

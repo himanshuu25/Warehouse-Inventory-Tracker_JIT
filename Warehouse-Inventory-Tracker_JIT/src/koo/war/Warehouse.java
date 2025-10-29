@@ -17,7 +17,6 @@ public class Warehouse {
 			l.add(pro);	
 		}
 		return l;
-		
 	}
 	public  synchronized void addPro(Product pro) {
 		
@@ -36,7 +35,7 @@ public class Warehouse {
 		if(m.containsKey(pro.getProId())) {
 			 Product p=m.get(pro.getProId());
 			 p.setProQnty(p.getProQnty()+qnty);
-			 System.out.println("Stock updated successfully for product: " + pro.getProName());
+			 System.out.println("Stock updated successfully for product: " + p.getProName());
 		}	
 		else{
 			System.out.println("Product not found in the warehouse.");
